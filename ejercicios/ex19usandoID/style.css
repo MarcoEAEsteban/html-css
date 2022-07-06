@@ -1,0 +1,30 @@
+@charset "UTF-8";
+/* en HTML es id    = en CSS es #
+   en HTML es class = en CSS es .
+*/
+body{
+    background-color: aliceblue;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1#principal{
+    text-align: center;
+    background-color: aqua;
+    font-size: 3em;
+}
+
+.subprincipal{
+    color: rgb(5, 100, 100);
+    text-decoration: underline;
+    background-color: rgb(142, 188, 228);
+}
+
+.basico{
+    color: rgb(59, 157, 243);
+}
+.intermedio{
+    color: rgb(33, 75, 113);
+}
+.avansado{
+    color: rgb(15, 33, 49);
+}

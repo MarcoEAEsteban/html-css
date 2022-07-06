@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grouping Tags</title>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: dimgray;
+            margin: 0px;
+        }
+
+        header{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+        nav{
+            background-color: rgb(123, 118, 118);
+            padding: 22px;
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.405);
+        }
+        nav > a{
+            text-decoration: none;
+            color: white;
+            font-weight: bold;
+            display: inline-block;
+            width: 80px;
+            height: 40px;
+            
+            margin: 0px 10px;
+            text-align: center;
+            border-radius:5px;
+            transition: 1ms;
+
+            background: transparent;
+            text-transform: uppercase;
+            font-size: 24px;
+            position: relative;
+        }
+        nav > a::after{
+            position: absolute;
+            bottom: 0;
+            left: 0;
+
+            content: "";
+            height: 3px;
+            width:0%;
+            background-color: red;
+            transition: .4s;  
+        }
+        nav > a:hover::after, a:active::after{
+            width: 100%;
+        }
+
+        main{
+            background-color: white;
+            padding: 10px;
+            margin: 10px;
+            border-radius: 30px 0px;
+            box-shadow: 3px 4px 5px 0px rgba(0, 0, 0, 0.435);
+        }
+
+        article{
+            background-color: lightgray;
+            padding: 15px;
+            border-radius: 30px 0;
+            margin: 10px 0;
+        }
+
+        article > aside{
+            background-color: rgb(178, 176, 176);
+            border-radius: 10px 0;
+            margin: 10px 0;
+            text-align: right;
+            padding: 0 20px;
+        }
+
+        footer{
+            background-color: black;
+            color: white;text-align: center;
+            padding: 1px;
+            margin: 0px;
+        }
+
+        div#bola{
+            width: 100px;
+            height: 100px;
+            margin: 20px auto;
+            border-radius: 50%;
+            background-color: white;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+
+        <h1>Mi site</h1>
+        <nav>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+            <a href="">LINK</a>
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section id="asuntos">
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sunt repellendus exercitationem quia officiis omnis adipisci, impedit mollitia tempore, doloribus dolorum eveniet perferendis minus sapiente maxime? Vero voluptatem perferendis totam ipsa.</p>
+        </section>
+        <section id="noticias">
+            <article>
+                <h2>Noticias sobre Brasil</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis excepturi error aut voluptatibus nobis sint! Quod esse error sint, nostrum aut incidunt minima excepturi cupiditate blanditiis consequatur quos, est perferendis.</p>
+                <aside>
+                    <p>Escrito por Jose da Silva.</p>
+                </aside>
+            </article>
+           
+            <article>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus distinctio laudantium culpa eos officia in ullam at est aspernatur nemo, neque temporibus, eum magni. Quae explicabo at deleniti ex modi?</p>
+            </article>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy Desarrollado por Marco Aucaruri</p>
+    </footer>
+    <div id="bola"></div>
+</body>
+</html>

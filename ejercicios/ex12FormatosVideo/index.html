@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Videos con HTML5</title>
+</head>
+<body>
+    <h1>Inserindo videos hospedados localmente</h1>
+    <p>Este video esta hospedado en mi propio servidor</p>
+    <h2>forma simple</h2>
+    <video src="midia/mi-video.webm" width="300" controls></video>
+
+    <h2>forma completa</h2>
+    <video width="300" poster="imagenes/WIN_20171229_10_52_30_Pro.jpg" controls loop>
+        <source src="midia/mi-video.m4v" type="video/m4v">
+        <source src="midia/mi-video.webm" type="video/webm">
+        <source src="midia/mi-video.mp4" type="video/mp4">
+        <p>Su navegador no tiene conptivilidad con la reproduccion de videos</p>
+    </video>
+    <audio preload="metadata" controls>
+        <source src="midia/Immortal - NEFFEX.mp3" type="audio/mpeg">
+    </audio>
+
+    <h2>Inseriendo videos de Youtube</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/m7p0C9VJu6Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/dfU18xq8OA0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/TDy1k5Da9FY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/NG7YqAqriLU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    
+</body>
+</html>

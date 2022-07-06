@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Midias en HTML</title>
+    
+</head>
+<body>
+    <h1>Imagen dinamica</h1>
+    <p>Intente abrir este site en varios dispositivos diferentes o simplemente aumente o disminuya el tamanho de su navegador.</p>
+    <picture>
+        <source media="(max-width: 750px)" srcset="imagenes/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="imagenes/foto-m.png" type="image/png">
+        <img src="imagenes/foto-g.png" alt="Imagen flexible">
+    </picture>
+
+    <h1>Reproduciendo audio</h1>
+    <p>Vamos aprender a reproducir audios en HTML5.</p>
+
+    <h2>Forma simple</h2>
+    <audio src="media/As You Fade Away - NEFFEX.mp3" controls autoplay  ></audio>
+
+    <h2>Forma completa</h2>
+    <audio preload="metadata" controls loop >
+        <source src="media/Better Days - NEFFEX.mp3" type="audio/mpeg">
+        <source src="media/Better Days - NEFFEX.ogg" type="audio/ogg">
+        <source src="media/Better Days - NEFFEX.wav" type="audio/wav">
+        <p>INfelizmente su navegador no consigue reproducir el audio.<a href="media/Better Days - NEFFEX.mp3"> Clique aqui para bajar el archivo MP3.</a></p>
+    </audio>
+    
+</body>
+</html>
